@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zahra's AI Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Home Screen -->
+    <div class="home-screen" id="homeScreen">
+      <h1>Welcome Zahra! ✨</h1>
+      <div id="stars">⭐ <span id="starCount">0</span></div>
+      <div class="controls">
+        <p>Choose what to learn today!</p>
+        <div class="control-group">
+          <label>Subject: </label>
+          <select id="topicSelect">
+            <option value="Spelling">Spelling</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="Grammar">Grammar</option>
+            <option value="Animals">Animals</option>
+            <option value="Space">Space</option>
+          </select>
+          <label>Language: </label>
+          <select id="languageSelect">
+            <option value="English">English</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Russian">Russian</option>
+            <option value="French">French</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <button id="generateBtn">Generate New Question</button>
+          <button id="dailyBtn">Generate Daily Set</button>
+          <button id="resetBtn">Reset to Defaults</button>
+        </div>
+        <div class="loading" id="loading" style="display:none;">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Question Screen -->
+    <div class="question-screen hidden" id="questionScreen">
+      <button id="homeBtn">🏠 Home</button>
+      <h2>Hi Zahra! ✨</h2>
+      <div id="stars">⭐ <span id="starCount2">0</span></div>
+      <div id="word"></div>
+      <div class="question-info">
+        Subject: <span id="currentTopic"></span> | Language: <span id="currentLanguage"></span>
+      </div>
+      <div class="control-group">
+        <input id="answer" type="text" placeholder="Type or say your answer..." autocomplete="off" />
+        <button class="mic-btn" id="micButton" title="Click to speak your answer">🎤</button>
+        <button id="speakBtn" title="Hear the question">🔊</button>
+        <button id="nextBtn">Next</button>
+      </div>
+      <div id="feedback"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

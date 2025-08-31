@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f4fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 420px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px #bbb3dda0;
+  padding: 2em;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #6d34e6;
+}
+
+.controls {
+  margin: 1em 0;
+}
+
+.control-group {
+  margin: 1em 0;
+}
+
+label {
+  font-weight: bold;
+  margin-right: .5em;
+}
+
+select, input[type="text"] {
+  padding: .5em;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  min-width: 80px;
+  background: #f4f4fc;
+  margin-right: .5em;
+}
+
+button {
+  background: #6d34e6;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: .7em 1.1em;
+  font-size: 1em;
+  margin: .3em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #5830a3;
+}
+
+.mic-btn, #speakBtn {
+  background: #ded3fc;
+  color: #6d34e6;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  border: none;
+  margin-left: .4em;
+}
+
+.question-info {
+  font-size: 1em;
+  margin-bottom: 1em;
+  color: #7046a7;
+}
+
+#word {
+  font-size: 1.3em;
+  margin-bottom: .7em;
+}
+
+#feedback {
+  font-size: 1.1em;
+  margin: 1em 0 0 0;
+  min-height: 2em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.loading {
+  color: #6d34e6;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+#homeBtn {
+  float: left;
+  margin-bottom: 1em;
+  background: #ded3fc;
+  color: #6d34e6;
+}
